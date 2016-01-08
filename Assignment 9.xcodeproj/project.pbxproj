@@ -14,6 +14,8 @@
 		34BB048F1ADF229F00518C30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BB048E1ADF229F00518C30 /* Images.xcassets */; };
 		34BB04921ADF229F00518C30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34BB04901ADF229F00518C30 /* LaunchScreen.xib */; };
 		34BB049E1ADF229F00518C30 /* Assignment_9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB049D1ADF229F00518C30 /* Assignment_9Tests.swift */; };
+		34BB04A81ADF265000518C30 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB04A71ADF265000518C30 /* Util.swift */; };
+		34BB04AA1ADF317000518C30 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB04A91ADF317000518C30 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		34BB04971ADF229F00518C30 /* Assignment 9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment 9Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BB049C1ADF229F00518C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34BB049D1ADF229F00518C30 /* Assignment_9Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_9Tests.swift; sourceTree = "<group>"; };
+		34BB04A71ADF265000518C30 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		34BB04A91ADF317000518C30 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				34BB04851ADF229F00518C30 /* AppDelegate.swift */,
 				34BB04871ADF229F00518C30 /* MasterViewController.swift */,
 				34BB04891ADF229F00518C30 /* DetailViewController.swift */,
+				34BB04A91ADF317000518C30 /* WebViewController.swift */,
 				34BB048B1ADF229F00518C30 /* Main.storyboard */,
 				34BB048E1ADF229F00518C30 /* Images.xcassets */,
 				34BB04901ADF229F00518C30 /* LaunchScreen.xib */,
@@ -93,6 +98,7 @@
 		34BB04831ADF229F00518C30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34BB04A71ADF265000518C30 /* Util.swift */,
 				34BB04841ADF229F00518C30 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -159,7 +165,9 @@
 		34BB04781ADF229F00518C30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Jason Michael Miletta";
 				TargetAttributes = {
 					34BB047F1ADF229F00518C30 = {
@@ -218,6 +226,8 @@
 				34BB048A1ADF229F00518C30 /* DetailViewController.swift in Sources */,
 				34BB04881ADF229F00518C30 /* MasterViewController.swift in Sources */,
 				34BB04861ADF229F00518C30 /* AppDelegate.swift in Sources */,
+				34BB04AA1ADF317000518C30 /* WebViewController.swift in Sources */,
+				34BB04A81ADF265000518C30 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +289,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -344,6 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Assignment 9/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Assignment 9/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +385,7 @@
 				);
 				INFOPLIST_FILE = "Assignment 9Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment 9.app/Assignment 9";
 			};
@@ -387,6 +401,7 @@
 				);
 				INFOPLIST_FILE = "Assignment 9Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asdf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment 9.app/Assignment 9";
 			};
@@ -411,6 +426,7 @@
 				34BB04A31ADF229F00518C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34BB04A41ADF229F00518C30 /* Build configuration list for PBXNativeTarget "Assignment 9Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +435,7 @@
 				34BB04A61ADF229F00518C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
